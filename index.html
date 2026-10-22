@@ -2,13 +2,28 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Meu primeiro site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS: seletores e cascata</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <p>nome</p>
-  <p>sua idade</p>
-  <p>frase</p>
-  <p>nome</p>
-  <h1>Título do Site</h1>
+
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <h1>Seletores de CSS</h1>
+
+  <p>Este parágrafo não tem classe: pega só o estilo do seletor body.</p>
+
+  <p class="destaque">Este tem class="destaque" e ganha fundo colorido.</p>
+
+  <p class="destaque" id="aviso">
+    Este tem a classe E o id="aviso". Os dois mandam no fundo — e o id vence,
+    porque tem mais peso na cascata.
+  </p>
+
 </body>
 </html>
